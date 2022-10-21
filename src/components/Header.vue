@@ -52,6 +52,11 @@ header#header
       font-size: 0.8rem;
     }
 
+    .sk-btn {
+      white-space: nowrap;
+      flex-wrap: nowrap;
+    }
+
     @include bp-up(lg) {
       max-width: none;
       position: sticky;

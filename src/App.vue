@@ -46,6 +46,7 @@ sk-grid.page(tpl="1fr" tpl-lg="4.8fr 1fr" gap="0")
     background: dark(900);
     color: rgba(#fff, 0.7);
     font-size: 14px;
+    overflow-x: hidden;
 
     @include bp-up(lg) {
       font-size: 16px;
