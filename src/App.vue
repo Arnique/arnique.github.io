@@ -24,20 +24,20 @@ sk-grid.page(tpl="1fr" tpl-lg="4.8fr 5.2fr" gap="0")
 
   onMounted(()=> {
     document.addEventListener('DOMContentLoaded', () => {
-      if (!loaded.value) {
-        document.onmouseover = () => {
-          loaded.value = true;
-          document.onmouseover = undefined;
-        };
-      }
-
-      if (!loaded.value) {
-        document.ontouchstart = () => {
-          loaded.value = true;
-          document.ontouchstart = undefined;
-        }
-      }
+      setTimeout(() => loaded.value = true, 1500);
     });
+
+    document.onmouseover = () => {
+      if (loaded.value) return;
+      loaded.value = true;
+      document.onmouseover = undefined;
+    };
+
+    document.ontouchstart = () => {
+      if (loaded.value) return;
+      loaded.value = true;
+      document.ontouchstart = undefined;
+    }
   })
 </script>
 
