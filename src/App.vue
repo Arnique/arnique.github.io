@@ -1,9 +1,9 @@
 <template lang="pug">
 .clouds(:class="{ loaded: loaded }")
-sk-grid.page(tpl="1fr" tpl-lg="4.8fr 1fr" gap="0")
-  sk-col.page-aside
+sk-grid.page(tpl="1fr" tpl-lg="4.8fr 5.2fr" gap="0")
+  sk-col.page-aside(xs="full" lg="auto")
     Header
-  sk-col.page-main
+  sk-col.page-main(xs="full" lg="auto")
     Skills
     Experience
     Work
@@ -167,5 +167,11 @@ sk-grid.page(tpl="1fr" tpl-lg="4.8fr 1fr" gap="0")
     backdrop-filter: blur(50px);
     border: 1px solid rgba(#fff, 0.1);
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+
+  .sk-col-xs-full {
+    @include bp-down(lg) {
+      grid-column: 1 / -1;
+    }
   }
 </style>
