@@ -2,7 +2,7 @@
 section.skills
   .title My Skills
   .sub-title I have 7 years total experience as a developer
-  sk-grid(cols="2" cols-lg="3" gap="15px" gap-lg="30px")
+  sk-grid(cols="1" cols-sm="2" cols-lg="3" gap="15px" gap-lg="30px")
     sk-col(xs="auto" v-for="v in skills" :key="v.title")
       .skill.glass
         component(:is="v.icon")
@@ -59,6 +59,7 @@ section.skills
     padding: 1rem;
     border-radius: 6px;
     display: flex;
+    align-items: flex-start;
     color: #fff;
 
     ._title {
@@ -78,6 +79,17 @@ section.skills
 
       path {
         fill: primary(400)
+      }
+    }
+
+    @include bp-down(lg) {
+      svg {
+        width: 30px;
+        margin-right: 0.7rem;
+      }
+
+      ._title {
+        font-size: 1rem;
       }
     }
   }
