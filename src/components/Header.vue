@@ -21,9 +21,9 @@ header#header
   #header {
     font-size: 300;
     color: rgba(#fff, 0.6);
-    position: relative;
     z-index: 1;
     padding: 100px 0 60px 0;
+    position: relative;
 
     .brand {
       height: 60px;
@@ -61,7 +61,6 @@ header#header
       max-width: none;
       position: sticky;
       top: 0;
-      height: 100vh;
       padding-top: 150px;
 
       h1 {

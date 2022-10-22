@@ -42,11 +42,6 @@ sk-grid.page(tpl="1fr" tpl-lg="4.8fr 5.2fr" gap="0")
 </script>
 
 <style lang="scss">
-  body, html {
-    width: 100%;
-    overflow-x: hidden;
-  }
-
   body {
     background: dark(900);
     color: rgba(#fff, 0.7);
