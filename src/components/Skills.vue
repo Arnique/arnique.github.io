@@ -4,7 +4,7 @@ section.skills
   .sub-title I have 7 years total experience as a developer
   sk-grid(cols="1" cols-sm="2" cols-lg="3" gap="15px" gap-lg="30px")
     sk-col(xs="auto" v-for="v in skills" :key="v.title")
-      .skill.glass
+      .skill.glass.pos-rel
         component(:is="v.icon")
         div.font-mono
           ._title {{ v.title }}
@@ -39,8 +39,8 @@ section.skills
     data() {
       return {
         skills: [
-          { title: 'NodeJS', icon: 'NodeSvg', sub: '7 years' },
-          { title: 'Typescript', icon: 'Typescript', sub: '5 years' },
+          { title: 'JS/NodeJS', icon: 'NodeSvg', sub: '7 years' },
+          { title: 'Typescript', icon: 'Typescript', sub: '4 years' },
           { title: 'React', icon: 'ReactSvg', sub: '4 years' },
           { title: 'Vue', icon: 'Vue', sub: '4 years' },
           { title: 'Next', icon: 'Next', sub: '3 years' },
@@ -83,6 +83,8 @@ section.skills
     }
 
     @include bp-down(lg) {
+      align-items: center;
+
       svg {
         width: 30px;
         margin-right: 0.7rem;
@@ -90,6 +92,13 @@ section.skills
 
       ._title {
         font-size: 1rem;
+      }
+
+      ._sub {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
       }
     }
   }
