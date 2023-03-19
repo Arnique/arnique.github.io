@@ -1,8 +1,8 @@
 <template lang="pug">
 header#header
   img.brand(src="/logo.png" alt="Arnique")
-  h1 Front End<br>Software Engineer
-  p I am proficient in most frontend and Web3 frameworks and write squeaky clean code.
+  h1 Fullstack<br>Software Engineer
+  p I am proficient in most Frontend and Backend frameworks and write squeaky clean code.
   sk-btn(variant="primary" size="lg" @click="contact" fat) #[EmailSvg.sk-btn-left] Get In Touch
 </template>
 
