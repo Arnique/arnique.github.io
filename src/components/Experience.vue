@@ -13,6 +13,14 @@ section#experience
 <script setup>
   const items = [
     {
+      title: 'Hummingbot',
+      items: [
+        'Custom Connectors',
+        'Custom Strategies',
+        'Custom Scripts'
+      ]
+    },
+    {
       title: 'Web 3',
       items: [
         'Dapps',
