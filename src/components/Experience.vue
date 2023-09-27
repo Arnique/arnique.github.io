@@ -7,7 +7,9 @@ section#experience
     .tile.glass(v-for="(v,i) in items" :key="i")
       h4.fg-primary {{ v.title }}
       ul
-        li(v-for="(x,i) in v.items" :key="i") {{ x }}
+        li(v-for="(x,i) in v.items" :key="i") {{ x.name ? x.name : x }}
+          ul(v-if="x.items")
+            li(v-for="(y,i) in x.items" :key="i") {{ y }}
 </template>
 
 <script setup>
@@ -15,9 +17,15 @@ section#experience
     {
       title: 'Hummingbot',
       items: [
-        'Custom Connectors',
-        'Custom Strategies',
-        'Custom Scripts'
+        { name: 'Custom Strategies' },
+        { name: 'Custom Scripts' },
+        { name: 'Custom Connectors',
+          items: [
+            'Bitrue',
+            'Bitget',
+            'P2b'
+          ]
+        }
       ]
     },
     {
@@ -93,6 +101,10 @@ section#experience
 
     ul {
       margin-left: 0;
+
+      ul {
+        margin-left: 23px
+      }
     }
   }
 </style>
