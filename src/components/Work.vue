@@ -18,6 +18,7 @@ section
     data() {
       return {
         work: [
+          { img: '/work/superview.png', title: 'Superview', href: 'https://d1.demobot.xyz/?symbol=BTCUSDT' },
           { img: '/work/slimkit.png', title: 'Slimkit UI', href: 'https://github.com/Arnique/slimkit' },
           { img: '/work/skin.png', title: 'skincashier.com', href: 'https://skincashier.com/' },
           { img: '/work/wip.png', title: 'myspotit.com', href: 'https://myspotit.com' },
