@@ -18,15 +18,12 @@ section
     data() {
       return {
         work: [
-          { img: '/work/superview.png', title: 'Superview', href: 'https://d1.demobot.xyz/?symbol=BTCUSDT' },
-          { img: '/work/slimkit.png', title: 'Slimkit UI', href: 'https://github.com/Arnique/slimkit' },
+          { img: '/work/superview.png', title: 'Superview', href: 'https://superview-mu.vercel.app/' },
+          { img: '/work/writeseed.png', title: 'Writeseed', href: 'https://writeseed.com/' },
           { img: '/work/skin.png', title: 'skincashier.com', href: 'https://skincashier.com/' },
           { img: '/work/wip.png', title: 'myspotit.com', href: 'https://myspotit.com' },
           { img: '/work/tipcc.png', title: 'tip.cc', href: 'https://tip.cc/' },
-          { img: '/work/lingvist.png', title: 'lingvist.com', href: 'https://lingvist.com/' },
-          { img: '/work/cardpost.png', title: 'cardpost theme', href: 'https://wrapbootstrap.com/theme/cardpost-blog-magazine-template-WB0614419' },
-          { img: '/work/helena.png', title: 'helena theme', href: 'https://wrapbootstrap.com/theme/helena-html-opencart-store-theme-WB049G842' },
-        ]
+          { img: '/work/lingvist.png', title: 'lingvist.com', href: 'https://lingvist.com/' }       ]
       }
     }
   }
