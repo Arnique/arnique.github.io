@@ -39,15 +39,15 @@ section.skills
     data() {
       return {
         skills: [
-          { title: 'JS/NodeJS', icon: 'NodeSvg', sub: '7 years' },
-          { title: 'Typescript', icon: 'Typescript', sub: '4 years' },
-          { title: 'React', icon: 'ReactSvg', sub: '4 years' },
-          { title: 'Vue', icon: 'Vue', sub: '4 years' },
-          { title: 'Next', icon: 'Next', sub: '3 years' },
-          { title: 'Nuxt', icon: 'Nuxt', sub: '3 years' },
-          { title: 'Web3', icon: 'Eth', sub: '2 years' },
-          { title: 'ThreeJs', icon: 'Three', sub: '2 years' },
-          { title: 'Tailwind', icon: 'Tailwind', sub: '2 years' },
+          { title: 'JS/NodeJS', icon: 'NodeSvg', sub: '9 years' },
+          { title: 'Typescript', icon: 'Typescript', sub: '6 years' },
+          { title: 'React', icon: 'ReactSvg', sub: '6 years' },
+          { title: 'Vue', icon: 'Vue', sub: '6 years' },
+          { title: 'Next', icon: 'Next', sub: '5 years' },
+          { title: 'Nuxt', icon: 'Nuxt', sub: '5 years' },
+          { title: 'Web3', icon: 'Eth', sub: '4 years' },
+          { title: 'ThreeJs', icon: 'Three', sub: '4 years' },
+          { title: 'Tailwind', icon: 'Tailwind', sub: '3 years' },
         ]
       }
     }
