@@ -23,7 +23,9 @@ section#experience
           items: [
             'Bitrue',
             'Bitget',
-            'P2b'
+            'P2b',
+            'LazyBear',
+            'Aster Dex'
           ]
         }
       ]
