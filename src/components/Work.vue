@@ -18,6 +18,7 @@ section
     data() {
       return {
         work: [
+          { img: '/work/jenga.jpg', title: 'JengaCash', href: 'https://jengacash.com/' },
           { img: '/work/superview.png', title: 'Superview', href: 'https://superview-mu.vercel.app/' },
           { img: '/work/writeseed.png', title: 'Writeseed', href: 'https://writeseed.com/' },
           { img: '/work/skin.png', title: 'skincashier.com', href: 'https://skincashier.com/' },
