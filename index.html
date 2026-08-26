@@ -1,377 +1,496 @@
-<!DOCTYPE html>
+<!doctype html>
+<!-- saved from url=(0026)https://arnique.github.io/ -->
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arnique — Web Developer</title>
-  <meta name="description" content="Arnique is a web developer building fast, precise, low-friction websites and tools for companies that care about the details." />
-  <link rel="icon" type="image/png" href="images/fav.png" />
-
-  <!-- Typefaces -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <!-- Ambient background layer -->
-  <div class="ambient" aria-hidden="true"></div>
-
-  <!-- ─────────────────────────  NAV  ───────────────────────── -->
-  <header class="nav" id="top">
-    <div class="nav__inner container">
-      <a class="nav__brand" href="#top" aria-label="Arnique — home">
-        <img src="images/logo.png" alt="Arnique" width="132" height="31" />
-      </a>
-      <nav class="nav__links" aria-label="Primary">
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#capabilities">Capabilities</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <a class="nav__status" href="#contact">
-        <span class="nav__dot" aria-hidden="true"></span>
-        <span class="nav__status-text">Available for work</span>
-      </a>
-      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
-        <span></span><span></span>
-      </button>
-    </div>
-    <div class="nav__mobile" id="mobile-menu" hidden>
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a href="#capabilities">Capabilities</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </header>
-
-  <main>
-    <!-- ─────────────────────────  HERO  ───────────────────────── -->
-    <section class="hero">
-      <div class="container hero__inner">
-        <p class="hero__eyebrow reveal">
-          <span class="hero__eyebrow-dot" aria-hidden="true"></span>
-          WEB DEVELOPER &nbsp;·&nbsp; HELLO, I'M ARNIQUE
-        </p>
-
-        <h1 class="hero__title reveal">
-          Websites built to be
-          <em>fast, precise,</em><br />
-          and quietly impressive.
-        </h1>
-
-        <p class="hero__lede reveal">
-          I design and build high-performance websites, tools, and interfaces
-          for companies that care about the details most people never notice —
-          the milliseconds, the semantics, the parts that make a product feel right.
-        </p>
-
-        <div class="hero__actions reveal">
-          <a class="btn btn--primary" href="#work">
-            View selected work
-            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <a class="btn btn--ghost" href="#contact">
-            Get in touch
-          </a>
-        </div>
-
-        <div class="hero__meta reveal">
-          <div class="hero__meta-item">
-            <span class="hero__meta-label">Focus</span>
-            <span class="hero__meta-value">Front-end · Performance</span>
-          </div>
-          <div class="hero__meta-item">
-            <span class="hero__meta-label">Based</span>
-            <span class="hero__meta-value">Remote · Worldwide</span>
-          </div>
-          <div class="hero__meta-item">
-            <span class="hero__meta-label">Stack</span>
-            <span class="hero__meta-value">HTML · CSS · JS · React · Node</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ─────────────────────────  WORK  ───────────────────────── -->
-    <section class="section" id="work">
-      <div class="container">
-        <header class="section__head reveal">
-          <p class="section__eyebrow">01 — Selected work</p>
-          <h2 class="section__title">Projects I've shipped</h2>
-          <p class="section__lede">
-            A few things I've designed, built, and launched. Each one solved a real
-            problem — no filler, no templates.
-          </p>
-        </header>
-
-        <div class="projects">
-          <!-- Writeseed — featured -->
-          <article class="project project--featured reveal">
-            <a class="project__link" href="https://writeseed.com/" target="_blank" rel="noopener">
-              <div class="project__media">
-                <img src="images/work/writeseed.png" alt="Writeseed website" loading="lazy" />
-              </div>
-              <div class="project__body">
-                <p class="project__index mono">01 / Writeseed</p>
-                <h3 class="project__name">Writeseed</h3>
-                <p class="project__desc">
-                  An AI-assisted writing workspace for long-form content — focused
-                  drafting tools that get out of the way when the words start flowing.
-                </p>
-                <div class="project__tags">
-                  <span>Web App</span><span>SaaS</span><span>AI</span>
-                </div>
-                <span class="project__visit">
-                  Visit site
-                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </span>
-              </div>
-            </a>
-          </article>
-
-          <!-- skincashier -->
-          <article class="project reveal">
-            <a class="project__link" href="https://skincashier.com/" target="_blank" rel="noopener">
-              <div class="project__media">
-                <img src="images/work/skin.png" alt="Skincashier website" loading="lazy" />
-              </div>
-              <div class="project__body">
-                <p class="project__index mono">02 / skincashier.com</p>
-                <h3 class="project__name">Skincashier</h3>
-                <p class="project__desc">
-                  A fast, trustworthy checkout experience for the digital trading
-                  market, built around speed and clarity.
-                </p>
-                <div class="project__tags">
-                  <span>E-commerce</span><span>Web App</span>
-                </div>
-                <span class="project__visit">
-                  Visit site
-                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </span>
-              </div>
-            </a>
-          </article>
-
-          <!-- myspotit -->
-          <article class="project reveal">
-            <a class="project__link" href="https://myspotit.com/" target="_blank" rel="noopener">
-              <div class="project__media">
-                <img src="images/work/wip.png" alt="myspotit website" loading="lazy" />
-              </div>
-              <div class="project__body">
-                <p class="project__index mono">03 / myspotit.com</p>
-                <h3 class="project__name">myspotit</h3>
-                <p class="project__desc">
-                  A platform for discovering and booking the spots worth your time.
-                  Currently in active development.
-                </p>
-                <div class="project__tags">
-                  <span>Platform</span><span>In progress</span>
-                </div>
-                <span class="project__visit">
-                  Visit site
-                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </span>
-              </div>
-            </a>
-          </article>
-
-          <!-- tip.cc -->
-          <article class="project reveal">
-            <a class="project__link" href="https://tip.cc/" target="_blank" rel="noopener">
-              <div class="project__media">
-                <img src="images/work/tipcc.png" alt="tip.cc website" loading="lazy" />
-              </div>
-              <div class="project__body">
-                <p class="project__index mono">04 / tip.cc</p>
-                <h3 class="project__name">tip.cc</h3>
-                <p class="project__desc">
-                  A cryptocurrency tipping bot trusted by large communities across
-                  Discord and Telegram — fast, reliable, always online.
-                </p>
-                <div class="project__tags">
-                  <span>Bot</span><span>Crypto</span><span>API</span>
-                </div>
-                <span class="project__visit">
-                  Visit site
-                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </span>
-              </div>
-            </a>
-          </article>
-
-          <!-- Lingvist -->
-          <article class="project reveal">
-            <a class="project__link" href="https://lingvist.com/" target="_blank" rel="noopener">
-              <div class="project__media">
-                <img src="images/work/lingvist.png" alt="Lingvist website" loading="lazy" />
-              </div>
-              <div class="project__body">
-                <p class="project__index mono">05 / lingvist.com</p>
-                <h3 class="project__name">Lingvist</h3>
-                <p class="project__desc">
-                  Adaptive language learning that tunes every lesson to your
-                  vocabulary — no wasted reps, just steady progress.
-                </p>
-                <div class="project__tags">
-                  <span>EdTech</span><span>Web App</span>
-                </div>
-                <span class="project__visit">
-                  Visit site
-                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </span>
-              </div>
-            </a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ─────────────────────────  ABOUT  ───────────────────────── -->
-    <section class="section section--alt" id="about">
-      <div class="container">
-        <header class="section__head reveal">
-          <p class="section__eyebrow">02 — About</p>
-          <h2 class="section__title">The short version</h2>
-        </header>
-
-        <div class="about">
-          <p class="about__pull reveal">
-            I care about the parts most people never see — the
-            <em>milliseconds</em>, the <em>semantics</em>, the details that make a
-            site feel inevitable rather than assembled.
-          </p>
-
-          <div class="about__copy reveal">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arnique Studio - Software Engineer</title>
+    <link rel="stylesheet" href="assets/site.css" />
+  </head>
+  <body>
+    <div id="app" data-v-app="">
+      <div class="clouds loaded"></div>
+      <div
+        class="sk-grid page"
+        style="
+          --t: 1fr;
+          --t-sm: 1fr;
+          --t-md: 1fr;
+          --t-lg: 4.8fr 5.2fr;
+          --t-xl: 4.8fr 5.2fr;
+          --g: 0;
+          --g-sm: 0;
+          --g-md: 0;
+          --g-lg: 0;
+          --g-xl: 0;
+        "
+      >
+        <div class="sk-col sk-col-xs-full sk-col-lg-auto page-aside">
+          <header id="header">
+            <img class="brand" src="assets/logo.png" alt="Arnique" />
+            <h1>Fullstack<br />Software Engineer</h1>
             <p>
-              I'm Arnique, a web developer focused on the front of the stack and
-              everything that makes it fast. I've built marketing sites, web apps,
-              and tooling for startups and established products — work that has to
-              look good and hold up under real traffic.
+              I am proficient in most Frontend and Backend frameworks and write
+              squeaky clean code.
             </p>
-            <p>
-              My default is simplicity: fewer moving parts, clearer structure, and
-              code that the next person can actually read. When something can be
-              removed without losing meaning, I remove it.
-            </p>
-          </div>
-
-          <div class="about__stack reveal">
-            <p class="about__stack-label mono">Currently working with</p>
-            <ul class="about__stack-list">
-              <li>HTML / CSS</li>
-              <li>JavaScript / TypeScript</li>
-              <li>React / Next.js</li>
-              <li>Node.js</li>
-              <li>SQL / Postgres</li>
-              <li>Git / CI/CD</li>
-              <li>Figma</li>
-              <li>Performance budgets</li>
-            </ul>
-          </div>
+            <button
+              class="sk-btn sk-btn-lg sk-btn-bg-primary sk-btn-fat"
+              type="button"
+              onclick="document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' })"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                class="sk-btn-left"
+              >
+                <path
+                  d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z"
+                ></path>
+              </svg>
+              Get In Touch<!---->
+            </button>
+          </header>
         </div>
-      </div>
-    </section>
-
-    <!-- ───────────────────────  CAPABILITIES  ─────────────────────── -->
-    <section class="section" id="capabilities">
-      <div class="container">
-        <header class="section__head reveal">
-          <p class="section__eyebrow">03 — Capabilities</p>
-          <h2 class="section__title">What I do</h2>
-        </header>
-
-        <div class="caps">
-          <article class="cap reveal">
-            <p class="cap__index mono">01</p>
-            <h3 class="cap__title">Front-end development</h3>
-            <p class="cap__text">
-              Semantic HTML, modern CSS, and JavaScript that behaves the same on
-              every screen and every connection.
-            </p>
-          </article>
-          <article class="cap reveal">
-            <p class="cap__index mono">02</p>
-            <h3 class="cap__title">Performance</h3>
-            <p class="cap__text">
-              Lean bundles, sensible caching, and Core Web Vitals that stay green
-              when the traffic spikes, not just in the demo.
-            </p>
-          </article>
-          <article class="cap reveal">
-            <p class="cap__index mono">03</p>
-            <h3 class="cap__title">Design systems</h3>
-            <p class="cap__text">
-              Reusable components, tokens, and patterns that keep a product
-              consistent as it scales past the first screen.
-            </p>
-          </article>
-          <article class="cap reveal">
-            <p class="cap__index mono">04</p>
-            <h3 class="cap__title">Backend &amp; APIs</h3>
-            <p class="cap__text">
-              Node.js services, integrations, and the plumbing between the browser
-              and the database — documented, tested, dependable.
-            </p>
-          </article>
+        <div class="sk-col sk-col-xs-full sk-col-lg-auto page-main">
+          <section class="skills">
+            <div class="title">My Skills</div>
+            <div class="sub-title">
+              I have 7 years total experience as a developer
+            </div>
+            <div
+              class="sk-grid"
+              style="
+                --t: repeat(1, 1fr);
+                --t-sm: repeat(2, 1fr);
+                --t-md: repeat(2, 1fr);
+                --t-lg: repeat(3, 1fr);
+                --t-xl: repeat(3, 1fr);
+                --g: 15px;
+                --g-sm: 15px;
+                --g-md: 15px;
+                --g-lg: 30px;
+                --g-xl: 30px;
+              "
+            >
+              <div class="sk-col sk-col-xs-auto">
+                <div class="skill glass pos-rel">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 32 32"
+                    width="32"
+                    height="32"
+                  >
+                    <path
+                      d="M15.994 3c-.365 0-.73.09-1.045.27L5.04 8.99C4.4 9.36 4 10.06 4 10.8v10.38c0 .75.4 1.44 1.04 1.81l2.6 1.5c1.26.62 1.71.62 2.28.62 1.87 0 2.94-1.13 2.94-3.09V11.31a.29.29 0 0 0-.29-.29h-1.25a.286.286 0 0 0-.29.29v10.7c0 .88-.91 1.74-2.38 1.01l-2.72-1.57a.303.303 0 0 1-.16-.27V10.81c0-.12.06-.22.16-.28l9.91-5.72a.29.29 0 0 1 .31 0l9.91 5.72c.1.06.16.16.16.27v10.38c0 .11-.06.22-.15.27l-9.92 5.73a.34.34 0 0 1-.31 0l-2.55-1.51a.23.23 0 0 0-.24-.02c-.71.4-.84.45-1.5.68-.16.05-.41.15.09.43l3.31 1.96c.32.18.68.28 1.04.28.37 0 .73-.1 1.05-.28l9.92-5.73c.64-.37 1.04-1.06 1.04-1.81V10.81c0-.75-.4-1.44-1.04-1.81l-9.92-5.73c-.316-.18-.68-.27-1.046-.27zm2.666 8.006c-2.83 0-4.52 1.2-4.52 3.2 0 2.17 1.68 2.768 4.4 3.038 3.25.32 3.5.802 3.5 1.442 0 1.1-.89 1.57-2.98 1.57-2.63 0-3.21-.661-3.4-1.961a.28.28 0 0 0-.28-.24h-1.29a.28.28 0 0 0-.28.28c0 1.67.91 3.66 5.25 3.66 3.14 0 4.94-1.24 4.94-3.4 0-2.14-1.45-2.71-4.49-3.12-3.09-.4-3.4-.61-3.4-1.33 0-.6.27-1.39 2.55-1.39 2.03 0 2.79.44 3.1 1.81.03.13.14.23.28.23h1.29c.08 0 .15-.04.21-.1a.27.27 0 0 0 .07-.22c-.2-2.36-1.77-3.47-4.95-3.47z"
+                    ></path>
+                  </svg>
+                  <div class="font-mono">
+                    <div class="_title">JS/NodeJS</div>
+                    <div class="_sub">9 years</div>
+                  </div>
+                </div>
+              </div>
+              <div class="sk-col sk-col-xs-auto">
+                <div class="skill glass pos-rel">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 50 50"
+                    width="50"
+                    height="50"
+                  >
+                    <path
+                      d="M5 4a1 1 0 0 0-1 1v40a1 1 0 0 0 1 1h40a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5zm1 2h38v38H6V6zm9 17v3.445h5V42h4V26.445h5V23H15zm21.691.01c-3.114-.013-6.673.931-6.673 5.314 0 5.73 7.72 5.732 7.72 8.317 0 .245.104 2.025-2.62 2.025-2.726 0-4.997-1.713-4.997-1.713v4.158s11.881 3.843 11.881-4.822c-.001-5.625-7.793-5.344-7.793-8.139 0-1.083.77-2.095 2.9-2.095 2.131 0 4.018 1.258 4.018 1.258l.14-3.706s-2.153-.588-4.576-.597z"
+                    ></path>
+                  </svg>
+                  <div class="font-mono">
+                    <div class="_title">Typescript</div>
+                    <div class="_sub">6 years</div>
+                  </div>
+                </div>
+              </div>
+              <div class="sk-col sk-col-xs-auto">
+                <div class="skill glass pos-rel">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 50 50"
+                    width="50"
+                    height="50"
+                  >
+                    <path
+                      d="M34.555 3.984c-.78-.026-1.596.11-2.414.375-1.637.53-3.352 1.565-5.112 2.996a31.739 31.739 0 0 0-2.084 1.883A31.625 31.625 0 0 0 22.906 7.4c-1.758-1.43-3.468-2.462-5.101-2.992-1.633-.53-3.258-.546-4.592.225-1.334.77-2.132 2.184-2.49 3.863-.358 1.679-.32 3.678.039 5.916.125.778.305 1.593.508 2.424-.763.231-1.503.474-2.19.742-2.072.81-3.787 1.778-5.035 2.93-1.249 1.152-2.055 2.55-2.055 4.086 0 1.535.806 2.932 2.055 4.084C5.293 29.83 7.008 30.8 9.08 31.609c.734.287 1.53.545 2.35.79a32.188 32.188 0 0 0-.698 3.187c-.36 2.24-.397 4.24-.039 5.922.36 1.682 1.157 3.105 2.498 3.879 1.341.774 2.973.755 4.61.224 1.636-.53 3.35-1.562 5.11-2.994a31.643 31.643 0 0 0 2.066-1.863c.695.677 1.39 1.315 2.076 1.873 1.758 1.43 3.47 2.463 5.103 2.992 1.633.53 3.256.546 4.59-.224s2.132-2.185 2.49-3.864c.358-1.678.319-3.678-.04-5.916a32.131 32.131 0 0 0-.7-3.195c.848-.25 1.668-.515 2.424-.81 2.072-.81 3.787-1.78 5.035-2.932 1.249-1.152 2.055-2.549 2.055-4.084 0-1.536-.806-2.934-2.055-4.086-1.248-1.152-2.963-2.12-5.035-2.93a30.001 30.001 0 0 0-2.223-.752c.205-.836.386-1.657.512-2.44.36-2.24.398-4.24.039-5.923-.359-1.683-1.159-3.103-2.5-3.877-.67-.387-1.414-.575-2.193-.602zm-.092 2.036c.49.013.907.13 1.264.335.714.413 1.241 1.215 1.523 2.536.282 1.32.272 3.104-.06 5.173-.114.709-.28 1.46-.467 2.229a46.396 46.396 0 0 0-6.674-1.072 48.157 48.157 0 0 0-3.676-4.518 29.432 29.432 0 0 1 1.947-1.76c1.626-1.322 3.165-2.222 4.45-2.638.642-.209 1.204-.299 1.693-.285zm-18.977.005c.492-.013 1.055.077 1.7.286 1.288.417 2.83 1.317 4.457 2.64a29.326 29.326 0 0 1 1.906 1.72 48.309 48.309 0 0 0-3.701 4.56c-2.38.218-4.613.587-6.649 1.082a28.836 28.836 0 0 1-.463-2.22c-.332-2.07-.34-3.857-.058-5.18.282-1.325.814-2.132 1.535-2.548.36-.208.781-.326 1.273-.34zm9.49 6.118c.815.886 1.63 1.856 2.438 2.9A57.87 57.87 0 0 0 25 14.99c-.833 0-1.652.02-2.46.055a45.06 45.06 0 0 1 2.437-2.902zM25 17.01c1.36 0 2.685.056 3.975.15a56.84 56.84 0 0 1 2.58 4.057 57.157 57.157 0 0 1 1.98 3.752 57.171 57.171 0 0 1-2.008 3.802 57.142 57.142 0 0 1-2.011 3.215c-1.457.122-2.966.19-4.516.19a54.15 54.15 0 0 1-4.62-.2 57.237 57.237 0 0 1-1.978-3.167 57.122 57.122 0 0 1-2.002-3.793 57.037 57.037 0 0 1 2.012-3.817 56.736 56.736 0 0 1 2.568-4.035A54.3 54.3 0 0 1 25 17.01zm6.55.4c1.649.206 3.196.492 4.636.834a45.018 45.018 0 0 1-1.592 4.375c-.414-.798-.843-1.6-1.307-2.402a60.116 60.116 0 0 0-1.736-2.807zm-13.206.016c-.58.89-1.15 1.799-1.7 2.752-.469.813-.907 1.625-1.326 2.433a45 45 0 0 1-1.58-4.35 42.914 42.914 0 0 1 4.606-.835zm19.82 1.35c.709.214 1.394.438 2.022.683 1.91.746 3.42 1.63 4.4 2.533.98.904 1.404 1.766 1.404 2.602 0 .836-.425 1.698-1.404 2.601-.98.904-2.49 1.787-4.4 2.534-.698.272-1.465.52-2.262.753a49.523 49.523 0 0 0-2.158-5.466 48.431 48.431 0 0 0 2.398-6.24zm-26.361.01a48.328 48.328 0 0 0 2.367 6.177A49.526 49.526 0 0 0 12 30.46a27.8 27.8 0 0 1-2.186-.732c-1.91-.747-3.42-1.63-4.4-2.534-.98-.903-1.404-1.765-1.404-2.601 0-.836.425-1.698 1.404-2.602.98-.904 2.49-1.787 4.4-2.533a27.487 27.487 0 0 1 1.989-.674zM25 20c-2.75 0-5 2.25-5 5s2.25 5 5 5 5-2.25 5-5-2.25-5-5-5zm0 2c1.669 0 3 1.331 3 3s-1.331 3-3 3-3-1.331-3-3 1.331-3 3-3zm9.62 5.363c.524 1.241.98 2.456 1.362 3.627a42.87 42.87 0 0 1-3.83.7c.388-.62.771-1.25 1.145-1.897.469-.812.904-1.623 1.322-2.43zm-19.278.002c.42.812.858 1.627 1.33 2.444.37.64.746 1.263 1.129 1.875a42.765 42.765 0 0 1-3.819-.702c.382-1.167.838-2.38 1.36-3.617zm-1.936 5.559a45.9 45.9 0 0 0 5.852.972 49.298 49.298 0 0 0 4.29 5.391 29.372 29.372 0 0 1-1.927 1.744c-1.626 1.323-3.167 2.22-4.451 2.637-1.284.416-2.243.361-2.957-.05-.714-.413-1.24-1.215-1.522-2.536-.281-1.32-.273-3.103.059-5.172.15-.939.376-1.944.656-2.986zm23.155.008c.282 1.048.508 2.058.66 3.002.332 2.07.34 3.855.058 5.18-.282 1.324-.812 2.132-1.533 2.548-.72.416-1.686.472-2.975.055-1.288-.418-2.83-1.32-4.457-2.643a29.391 29.391 0 0 1-1.941-1.756 49.237 49.237 0 0 0 4.32-5.418 46 46 0 0 0 5.868-.968zm-14.694 1.17c1.027.056 2.067.093 3.133.093 1.03 0 2.037-.035 3.031-.088a46.038 46.038 0 0 1-3.084 3.74 46.198 46.198 0 0 1-3.08-3.745z"
+                    ></path>
+                  </svg>
+                  <div class="font-mono">
+                    <div class="_title">React</div>
+                    <div class="_sub">6 years</div>
+                  </div>
+                </div>
+              </div>
+              <div class="sk-col sk-col-xs-auto">
+                <div class="skill glass pos-rel">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 32 32"
+                    width="64"
+                    height="64"
+                  >
+                    <path
+                      d="m3 6 13 22L29 6H19l-3 5.3L13 6H3zm3.5 2h3.771L16 18l5.729-10H25.5L16 24.1 6.5 8z"
+                    ></path>
+                  </svg>
+                  <div class="font-mono">
+                    <div class="_title">Vue</div>
+                    <div class="_sub">6 years</div>
+                  </div>
+                </div>
+              </div>
+              <div class="sk-col sk-col-xs-auto">
+                <div class="skill glass pos-rel">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 48 48"
+                    width="48"
+                    height="48"
+                  >
+                    <path
+                      fill="#212121"
+                      d="M18.974 31.5a1.5 1.5 0 1 1-3 0v-14a1.499 1.499 0 0 1 2.724-.867l16.777 23.704C40.617 36.709 44 30.735 44 24c0-11-9-20-20-20S4 13 4 24s9 20 20 20c3.192 0 6.206-.777 8.89-2.122L18.974 22.216V31.5zm10-15a1.5 1.5 0 1 1 3 0v13.84l-3-4.227V16.5z"
+                    ></path>
+                  </svg>
+                  <div class="font-mono">
+                    <div class="_title">Next</div>
+                    <div class="_sub">5 years</div>
+                  </div>
+                </div>
+              </div>
+              <div class="sk-col sk-col-xs-auto">
+                <div class="skill glass pos-rel">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 298">
+                    <g fill="none">
+                      <path
+                        fill="#00C58E"
+                        d="m227.921 82.074-13.689 23.704-46.815-81.087-143.713 248.89h97.303c0 13.09 10.613 23.703 23.704 23.703H23.704A23.704 23.704 0 0 1 3.18 261.728L146.893 12.84a23.704 23.704 0 0 1 41.057 0l39.97 69.234z"
+                      ></path>
+                      <path
+                        fill="#2F495E"
+                        d="m331.664 261.728-90.054-155.95-13.689-23.704-13.689 23.704-90.044 155.95a23.704 23.704 0 0 0 20.523 35.556h166.4a23.704 23.704 0 0 0 20.533-35.556h.02zM144.711 273.58l83.21-144.099 83.19 144.1h-166.4z"
+                      ></path>
+                      <path
+                        fill="#108775"
+                        d="M396.05 285.432a23.7 23.7 0 0 1-20.524 11.852H311.11c13.091 0 23.704-10.613 23.704-23.704h40.662L260.099 73.748l-18.49 32.03-13.688-23.704 11.654-20.178a23.704 23.704 0 0 1 41.057 0L396.05 261.728a23.704 23.704 0 0 1 0 23.704z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <div class="font-mono">
+                    <div class="_title">Nuxt</div>
+                    <div class="_sub">5 years</div>
+                  </div>
+                </div>
+              </div>
+              <div class="sk-col sk-col-xs-auto">
+                <div class="skill glass pos-rel">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 50 50"
+                    width="50"
+                    height="50"
+                  >
+                    <path
+                      d="M25.984.986a1 1 0 0 0-.884.567l-13.93 21.89a1.001 1.001 0 0 0-.063.106 1.001 1.001 0 0 0-.002.002 1 1 0 0 0-.039.09 1.001 1.001 0 0 0-.052.193 1 1 0 0 0-.014.2 1.001 1.001 0 0 0 0 .001 1 1 0 0 0 .008.098 1.001 1.001 0 0 0 .004.02 1 1 0 0 0 .035.146 1 1 0 0 0 .008.027 1.001 1.001 0 0 0 0 .002 1 1 0 0 0 .037.092 1.001 1.001 0 0 0 0 .002 1 1 0 0 0 .047.086 1.001 1.001 0 0 0 0 .002 1 1 0 0 0 .054.082 1.001 1.001 0 0 0 .03.035 1 1 0 0 0 .035.043 1 1 0 0 0 .068.07 1.001 1.001 0 0 0 .002.002 1.001 1.001 0 0 0 .158.117 1.001 1.001 0 0 0 .002.002 1 1 0 0 0 .016.008 1.001 1.001 0 0 0 .002.002L25.379 32.8a1 1 0 0 0 1.234.004l13.862-7.922a1.001 1.001 0 0 0 .021-.012 1 1 0 0 0 .065-.04 1.001 1.001 0 0 0 .02-.015 1 1 0 0 0 .013-.011 1.001 1.001 0 0 0 .06-.045 1.001 1.001 0 0 0 .004-.004 1 1 0 0 0 .012-.01 1.001 1.001 0 0 0 .06-.06 1.001 1.001 0 0 0 .065-.077 1.001 1.001 0 0 0 .055-.08 1.001 1.001 0 0 0 .002-.002 1 1 0 0 0 .002-.005 1.001 1.001 0 0 0 .046-.08 1.001 1.001 0 0 0 0-.003 1 1 0 0 0 .032-.07 1.001 1.001 0 0 0 .007-.021 1 1 0 0 0 .008-.024 1.001 1.001 0 0 0 .02-.068 1.001 1.001 0 0 0 .002-.004 1 1 0 0 0 .002-.006 1.001 1.001 0 0 0 .017-.092 1 1 0 0 0 .01-.076 1.001 1.001 0 0 0 0-.008 1 1 0 0 0 .002-.091 1 1 0 0 0-.004-.059 1.001 1.001 0 0 0-.006-.063 1.001 1.001 0 0 0 0-.001 1 1 0 0 0-.002-.01 1.001 1.001 0 0 0-.017-.084 1.001 1.001 0 0 0 0-.004 1 1 0 0 0-.022-.074 1.001 1.001 0 0 0-.008-.022 1 1 0 0 0-.01-.023 1.001 1.001 0 0 0-.027-.067 1.001 1.001 0 0 0-.002-.002 1 1 0 0 0-.002-.006 1.001 1.001 0 0 0-.046-.082 1 1 0 0 0-.006-.01 1.001 1.001 0 0 0-.004-.007l-.032-.047-13.916-21.87a1 1 0 0 0-.912-.56zM25 5.436V17.34l-10.416 4.463L25 5.436zm2 0 10.416 16.367L27 17.34V5.436zm-2 14.08v10.76l-10.758-6.147L25 19.516zm2 0 10.758 4.613L27 30.275v-10.76zm13.008 8.482a1 1 0 0 0-.504.133L26 35.848 12.496 28.13A1 1 0 0 0 12.02 28a1 1 0 0 0-.825 1.594l13.934 18.91a1 1 0 0 0 1.74.002l13.936-18.912a1 1 0 0 0-.797-1.596zm-24.395 4.219L25 37.582v7.375l-9.387-12.74zm20.774 0L27 44.957v-7.375l9.387-5.365z"
+                    ></path>
+                  </svg>
+                  <div class="font-mono">
+                    <div class="_title">Web3</div>
+                    <div class="_sub">4 years</div>
+                  </div>
+                </div>
+              </div>
+              <div class="sk-col sk-col-xs-auto">
+                <div class="skill glass pos-rel">
+                  <svg
+                    fill="none"
+                    stroke-linecap="square"
+                    stroke-miterlimit="10"
+                    viewBox="0 0 226.77 226.77"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g
+                      fill-rule="evenodd"
+                      stroke="#000"
+                      stroke-linecap="butt"
+                      stroke-linejoin="round"
+                      stroke-width="4"
+                    >
+                      <path
+                        d="M71.984 204.863 28.771 29.923l173.23 49.874z"
+                      ></path>
+                      <path
+                        d="m115.354 54.865 21.591 87.496-86.567-24.945z"
+                      ></path>
+                      <path
+                        d="M93.874 129.283 83.15 85.818l43.008 12.346zM72.422 42.406 83.146 85.87 40.138 73.525zM158.434 67.183l10.724 43.465-43.008-12.346zM93.879 129.313l10.724 43.465-43.008-12.346z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <div class="font-mono">
+                    <div class="_title">ThreeJs</div>
+                    <div class="_sub">4 years</div>
+                  </div>
+                </div>
+              </div>
+              <div class="sk-col sk-col-xs-auto">
+                <div class="skill glass pos-rel">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 48 48"
+                    width="48"
+                    height="48"
+                  >
+                    <path
+                      fill="#00acc1"
+                      d="M24 9.604c-6.4 0-10.4 3.199-12 9.597 2.4-3.199 5.2-4.398 8.4-3.599 1.826.456 3.131 1.781 4.576 3.247C27.328 21.236 30.051 24 36 24c6.4 0 10.4-3.199 12-9.598-2.4 3.199-5.2 4.399-8.4 3.6-1.825-.456-3.13-1.781-4.575-3.247C32.672 12.367 29.948 9.604 24 9.604zM12 24c-6.4 0-10.4 3.199-12 9.598 2.4-3.199 5.2-4.399 8.4-3.599 1.825.457 3.13 1.781 4.575 3.246 2.353 2.388 5.077 5.152 11.025 5.152 6.4 0 10.4-3.199 12-9.598-2.4 3.199-5.2 4.399-8.4 3.599-1.826-.456-3.131-1.781-4.576-3.246C20.672 26.764 17.949 24 12 24z"
+                    ></path>
+                  </svg>
+                  <div class="font-mono">
+                    <div class="_title">Tailwind</div>
+                    <div class="_sub">3 years</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="experience">
+            <div class="title">Additional Skills</div>
+            <div class="sub-title">
+              My mastery of Javascript also means I have experience in the
+              following:
+            </div>
+            <div class="tiles">
+              <div class="tile glass">
+                <h4 class="fg-primary">Hummingbot</h4>
+                <ul>
+                  <li>Custom Strategies<!----></li>
+                  <li>Custom Scripts<!----></li>
+                  <li>
+                    Custom Connectors
+                    <ul>
+                      <li>Bitrue</li>
+                      <li>Bitget</li>
+                      <li>P2b</li>
+                      <li>LazyBear</li>
+                      <li>Aster Dex</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="tile glass">
+                <h4 class="fg-primary">Web 3</h4>
+                <ul>
+                  <li>Dapps<!----></li>
+                  <li>Wallet Intergration<!----></li>
+                  <li>Smart Contracts<!----></li>
+                </ul>
+              </div>
+              <div class="tile glass">
+                <h4 class="fg-primary">Bots &amp; Automation</h4>
+                <ul>
+                  <li>Web scraping<!----></li>
+                  <li>Discords bots<!----></li>
+                  <li>Telegram bots<!----></li>
+                  <li>Crypto trading bots<!----></li>
+                </ul>
+              </div>
+              <div class="tile glass">
+                <h4 class="fg-primary">3D Browser Graphics</h4>
+                <ul>
+                  <li>Games<!----></li>
+                  <li>Product visualisation<!----></li>
+                </ul>
+              </div>
+              <div class="tile glass">
+                <h4 class="fg-primary">Mobile Apps</h4>
+                <ul>
+                  <li>React Native<!----></li>
+                  <li>NativeScript<!----></li>
+                  <li>NativeScript-Vue<!----></li>
+                </ul>
+              </div>
+              <div class="tile glass">
+                <h4 class="fg-primary">UI Components</h4>
+                <ul>
+                  <li>Web Components<!----></li>
+                  <li>Vue 3<!----></li>
+                </ul>
+              </div>
+              <div class="tile glass">
+                <h4 class="fg-primary">UI Design</h4>
+                <ul>
+                  <li>Adobe XD<!----></li>
+                  <li>Figma<!----></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="title">Recent Works</div>
+            <div class="sub-title">
+              Most of my work is for private contractors but some are public
+            </div>
+            <div class="work-tiles">
+              <div xs="auto">
+                <a
+                  class="work glass"
+                  href="https://superview-mu.vercel.app/"
+                  target="self"
+                  ><div class="_img"><img src="assets/superview.png" /></div>
+                  <div class="_text"><div class="_name">Superview</div></div></a
+                >
+              </div>
+              <div xs="auto">
+                <a
+                  class="work glass"
+                  href="https://writeseed.com/"
+                  target="self"
+                  ><div class="_img"><img src="assets/writeseed.png" /></div>
+                  <div class="_text"><div class="_name">Writeseed</div></div></a
+                >
+              </div>
+              <div xs="auto">
+                <a
+                  class="work glass"
+                  href="https://skincashier.com/"
+                  target="self"
+                  ><div class="_img"><img src="assets/skin.png" /></div>
+                  <div class="_text">
+                    <div class="_name">skincashier.com</div>
+                  </div></a
+                >
+              </div>
+              <div xs="auto">
+                <a class="work glass" href="https://myspotit.com/" target="self"
+                  ><div class="_img"><img src="assets/wip.png" /></div>
+                  <div class="_text">
+                    <div class="_name">myspotit.com</div>
+                  </div></a
+                >
+              </div>
+              <div xs="auto">
+                <a class="work glass" href="https://tip.cc/" target="self"
+                  ><div class="_img"><img src="assets/tipcc.png" /></div>
+                  <div class="_text"><div class="_name">tip.cc</div></div></a
+                >
+              </div>
+              <div xs="auto">
+                <a class="work glass" href="https://lingvist.com/" target="self"
+                  ><div class="_img"><img src="assets/lingvist.png" /></div>
+                  <div class="_text">
+                    <div class="_name">lingvist.com</div>
+                  </div></a
+                >
+              </div>
+            </div>
+          </section>
+          <section id="contact">
+            <div class="title">Get In Touch</div>
+            <div class="sub-title">
+              Send me a message and I'll get back to you
+            </div>
+            <div
+              class="sk-grid"
+              style="
+                --t: repeat(1, 1fr);
+                --t-sm: repeat(1, 1fr);
+                --t-md: repeat(1, 1fr);
+                --t-lg: repeat(2, 1fr);
+                --t-xl: repeat(2, 1fr);
+                --g: 15px;
+                --g-sm: 15px;
+                --g-md: 15px;
+                --g-lg: 20px;
+                --g-xl: 20px;
+              "
+            >
+              <div class="sk-col sk-col-xs-auto">
+                <a
+                  class="sk-btn sk-btn-lg sk-btn-bg-success sk-btn-block"
+                  href="mailto:arnold@arnique.net"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    class="sk-btn-left"
+                  >
+                    <path
+                      d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z"
+                    ></path>
+                  </svg>
+                  arnold@arnique.net<!----></a
+                >
+              </div>
+              <div class="sk-col sk-col-xs-auto">
+                <a
+                  class="sk-btn sk-btn-lg sk-btn-bg-info sk-btn-block"
+                  href="https://github.com/Arnique"
+                  ><svg
+                    class="sk-btn-left"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59c.4.07.55-.17.55-.38c0-.19-.01-.82-.01-1.49c-2.01.37-2.53-.49-2.69-.94c-.09-.23-.48-.94-.82-1.13c-.28-.15-.68-.52-.01-.53c.63-.01 1.08.58 1.23.82c.72 1.21 1.87.87 2.33.66c.07-.52.28-.87.51-1.07c-1.78-.2-3.64-.89-3.64-3.95c0-.87.31-1.59.82-2.15c-.08-.2-.36-1.02.08-2.12c0 0 .67-.21 2.2.82c.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82c.44 1.1.16 1.92.08 2.12c.51.56.82 1.27.82 2.15c0 3.07-1.87 3.75-3.65 3.95c.29.25.54.73.54 1.48c0 1.07-.01 1.93-.01 2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                    ></path></svg
+                  ><span>github.com/Arnique</span><!----></a
+                >
+              </div>
+              <div class="sk-col sk-col-xs-auto">
+                <a
+                  class="sk-btn sk-btn-lg sk-btn-bg-secondary sk-btn-block"
+                  href="https://discordapp.com/users/Arnique#9582"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 30 30"
+                    width="30"
+                    height="30"
+                    class="sk-btn-left"
+                  >
+                    <path
+                      d="M25.12 6.946c-2.424-1.948-6.257-2.278-6.419-2.292a.608.608 0 0 0-.604.357c-.004.008-.218.629-.425 1.228 2.817.493 4.731 1.587 4.833 1.647A.999.999 0 0 1 22 9.75a.99.99 0 0 1-.501-.135C21.471 9.598 18.663 8 15.002 8 11.34 8 8.531 9.599 8.503 9.615a1 1 0 0 1-1.006-1.729c.102-.06 2.023-1.158 4.848-1.65-.218-.606-.438-1.217-.442-1.225a.6.6 0 0 0-.604-.357c-.162.013-3.995.343-6.451 2.318C3.564 8.158 1 15.092 1 21.087a.6.6 0 0 0 .08.301c1.771 3.11 6.599 3.924 7.699 3.959a.61.61 0 0 0 .511-.249l1.19-1.612c-2.61-.629-3.99-1.618-4.073-1.679a1 1 0 0 1 1.181-1.614C7.625 20.217 10.172 22 15 22c4.847 0 7.387-1.79 7.412-1.808a1.001 1.001 0 0 1 1.183 1.613c-.083.061-1.456 1.048-4.06 1.677l1.175 1.615c.115.158.298.25.492.25l.019-.001c1.101-.035 5.929-.849 7.699-3.959a.6.6 0 0 0 .08-.301c0-5.994-2.564-12.928-3.88-14.14zM11 19c-1.105 0-2-1.119-2-2.5s.895-2.5 2-2.5 2 1.119 2 2.5-.895 2.5-2 2.5zm8 0c-1.105 0-2-1.119-2-2.5s.895-2.5 2-2.5 2 1.119 2 2.5-.895 2.5-2 2.5z"
+                    ></path>
+                  </svg>
+                  Arnique#9582<!----></a
+                >
+              </div>
+              <div class="sk-col sk-col-xs-auto">
+                <a
+                  class="sk-btn sk-btn-lg sk-btn-bg-primary sk-btn-block"
+                  href="https://telegram.me/acdoom"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 50 50"
+                    width="50"
+                    height="50"
+                    class="sk-btn-left"
+                  >
+                    <path
+                      d="M25 2c12.703 0 23 10.297 23 23S37.703 48 25 48 2 37.703 2 25 12.297 2 25 2zm7.934 32.375c.423-1.298 2.405-14.234 2.65-16.783.074-.772-.17-1.285-.648-1.514-.578-.278-1.434-.139-2.427.219-1.362.491-18.774 7.884-19.78 8.312-.954.405-1.856.847-1.856 1.487 0 .45.267.703 1.003.966.766.273 2.695.858 3.834 1.172 1.097.303 2.346.04 3.046-.395.742-.461 9.305-6.191 9.92-6.693.614-.502 1.104.141.602.644-.502.502-6.38 6.207-7.155 6.997-.941.959-.273 1.953.358 2.351.721.454 5.906 3.932 6.687 4.49.781.558 1.573.811 2.298.811.725 0 1.107-.955 1.468-2.064z"
+                    ></path>
+                  </svg>
+                  @acdoom<!----></a
+                >
+              </div>
+            </div>
+          </section>
+          <footer id="footer">
+            <div>©2022 - Arnique.net</div>
+            <div class="credits">
+              icons courtesy of
+              <a href="https://icons8.com/" target="self">icons8.com</a>
+            </div>
+          </footer>
         </div>
-      </div>
-    </section>
-
-    <!-- ─────────────────────────  CONTACT  ───────────────────────── -->
-    <section class="section section--contact" id="contact">
-      <div class="container">
-        <div class="contact">
-          <p class="section__eyebrow reveal">04 — Contact</p>
-          <h2 class="contact__title reveal">
-            Have something to build?<br />
-            <em>Let's talk.</em>
-          </h2>
-          <p class="contact__lede reveal">
-            I'm currently open to freelance and contract work. Tell me what you're
-            trying to ship — I'll tell you honestly whether I can help.
-          </p>
-          <div class="contact__actions reveal">
-            <a class="btn btn--primary btn--lg" href="mailto:hello@arnique.com">
-              hello@arnique.com
-              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-            <a class="btn btn--ghost btn--lg" href="#top">
-              Back to top
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ─────────────────────────  FOOTER  ───────────────────────── -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__top">
-        <a class="footer__brand" href="#top" aria-label="Arnique — back to top">
-          <img src="images/logo.png" alt="Arnique" width="132" height="31" />
-        </a>
-        <div class="footer__links">
-          <a href="https://github.com/arnique" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://x.com/arnique" target="_blank" rel="noopener">X / Twitter</a>
-          <a href="https://www.linkedin.com/in/arnique" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="mailto:hello@arnique.com">Email</a>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p class="footer__copy">&copy; 2026 Arnique. All rights reserved.</p>
-        <p class="footer__meta mono">
-          <span class="footer__dot" aria-hidden="true"></span>
-          Built with HTML, CSS &amp; care
-        </p>
       </div>
     </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+  </body>
 </html>
