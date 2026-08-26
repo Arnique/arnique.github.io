@@ -1,14 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="fav.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" as="image" href="/assets/clouds.png">
-    <title>Arnique Studio - Software Engineer</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arnique — Web Developer</title>
+  <meta name="description" content="Arnique is a web developer building fast, precise, low-friction websites and tools for companies that care about the details." />
+  <link rel="icon" type="image/png" href="images/fav.png" />
+
+  <!-- Typefaces -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient background layer -->
+  <div class="ambient" aria-hidden="true"></div>
+
+  <!-- ─────────────────────────  NAV  ───────────────────────── -->
+  <header class="nav" id="top">
+    <div class="nav__inner container">
+      <a class="nav__brand" href="#top" aria-label="Arnique — home">
+        <img src="images/logo.png" alt="Arnique" width="132" height="31" />
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="nav__status" href="#contact">
+        <span class="nav__dot" aria-hidden="true"></span>
+        <span class="nav__status-text">Available for work</span>
+      </a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobile-menu" hidden>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ─────────────────────────  HERO  ───────────────────────── -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <p class="hero__eyebrow reveal">
+          <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+          WEB DEVELOPER &nbsp;·&nbsp; HELLO, I'M ARNIQUE
+        </p>
+
+        <h1 class="hero__title reveal">
+          Websites built to be
+          <em>fast, precise,</em><br />
+          and quietly impressive.
+        </h1>
+
+        <p class="hero__lede reveal">
+          I design and build high-performance websites, tools, and interfaces
+          for companies that care about the details most people never notice —
+          the milliseconds, the semantics, the parts that make a product feel right.
+        </p>
+
+        <div class="hero__actions reveal">
+          <a class="btn btn--primary" href="#work">
+            View selected work
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#contact">
+            Get in touch
+          </a>
+        </div>
+
+        <div class="hero__meta reveal">
+          <div class="hero__meta-item">
+            <span class="hero__meta-label">Focus</span>
+            <span class="hero__meta-value">Front-end · Performance</span>
+          </div>
+          <div class="hero__meta-item">
+            <span class="hero__meta-label">Based</span>
+            <span class="hero__meta-value">Remote · Worldwide</span>
+          </div>
+          <div class="hero__meta-item">
+            <span class="hero__meta-label">Stack</span>
+            <span class="hero__meta-value">HTML · CSS · JS · React · Node</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────  WORK  ───────────────────────── -->
+    <section class="section" id="work">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">01 — Selected work</p>
+          <h2 class="section__title">Projects I've shipped</h2>
+          <p class="section__lede">
+            A few things I've designed, built, and launched. Each one solved a real
+            problem — no filler, no templates.
+          </p>
+        </header>
+
+        <div class="projects">
+          <!-- Writeseed — featured -->
+          <article class="project project--featured reveal">
+            <a class="project__link" href="https://writeseed.com/" target="_blank" rel="noopener">
+              <div class="project__media">
+                <img src="images/work/writeseed.png" alt="Writeseed website" loading="lazy" />
+              </div>
+              <div class="project__body">
+                <p class="project__index mono">01 / Writeseed</p>
+                <h3 class="project__name">Writeseed</h3>
+                <p class="project__desc">
+                  An AI-assisted writing workspace for long-form content — focused
+                  drafting tools that get out of the way when the words start flowing.
+                </p>
+                <div class="project__tags">
+                  <span>Web App</span><span>SaaS</span><span>AI</span>
+                </div>
+                <span class="project__visit">
+                  Visit site
+                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+              </div>
+            </a>
+          </article>
+
+          <!-- skincashier -->
+          <article class="project reveal">
+            <a class="project__link" href="https://skincashier.com/" target="_blank" rel="noopener">
+              <div class="project__media">
+                <img src="images/work/skin.png" alt="Skincashier website" loading="lazy" />
+              </div>
+              <div class="project__body">
+                <p class="project__index mono">02 / skincashier.com</p>
+                <h3 class="project__name">Skincashier</h3>
+                <p class="project__desc">
+                  A fast, trustworthy checkout experience for the digital trading
+                  market, built around speed and clarity.
+                </p>
+                <div class="project__tags">
+                  <span>E-commerce</span><span>Web App</span>
+                </div>
+                <span class="project__visit">
+                  Visit site
+                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+              </div>
+            </a>
+          </article>
+
+          <!-- myspotit -->
+          <article class="project reveal">
+            <a class="project__link" href="https://myspotit.com/" target="_blank" rel="noopener">
+              <div class="project__media">
+                <img src="images/work/wip.png" alt="myspotit website" loading="lazy" />
+              </div>
+              <div class="project__body">
+                <p class="project__index mono">03 / myspotit.com</p>
+                <h3 class="project__name">myspotit</h3>
+                <p class="project__desc">
+                  A platform for discovering and booking the spots worth your time.
+                  Currently in active development.
+                </p>
+                <div class="project__tags">
+                  <span>Platform</span><span>In progress</span>
+                </div>
+                <span class="project__visit">
+                  Visit site
+                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+              </div>
+            </a>
+          </article>
+
+          <!-- tip.cc -->
+          <article class="project reveal">
+            <a class="project__link" href="https://tip.cc/" target="_blank" rel="noopener">
+              <div class="project__media">
+                <img src="images/work/tipcc.png" alt="tip.cc website" loading="lazy" />
+              </div>
+              <div class="project__body">
+                <p class="project__index mono">04 / tip.cc</p>
+                <h3 class="project__name">tip.cc</h3>
+                <p class="project__desc">
+                  A cryptocurrency tipping bot trusted by large communities across
+                  Discord and Telegram — fast, reliable, always online.
+                </p>
+                <div class="project__tags">
+                  <span>Bot</span><span>Crypto</span><span>API</span>
+                </div>
+                <span class="project__visit">
+                  Visit site
+                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+              </div>
+            </a>
+          </article>
+
+          <!-- Lingvist -->
+          <article class="project reveal">
+            <a class="project__link" href="https://lingvist.com/" target="_blank" rel="noopener">
+              <div class="project__media">
+                <img src="images/work/lingvist.png" alt="Lingvist website" loading="lazy" />
+              </div>
+              <div class="project__body">
+                <p class="project__index mono">05 / lingvist.com</p>
+                <h3 class="project__name">Lingvist</h3>
+                <p class="project__desc">
+                  Adaptive language learning that tunes every lesson to your
+                  vocabulary — no wasted reps, just steady progress.
+                </p>
+                <div class="project__tags">
+                  <span>EdTech</span><span>Web App</span>
+                </div>
+                <span class="project__visit">
+                  Visit site
+                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────  ABOUT  ───────────────────────── -->
+    <section class="section section--alt" id="about">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">02 — About</p>
+          <h2 class="section__title">The short version</h2>
+        </header>
+
+        <div class="about">
+          <p class="about__pull reveal">
+            I care about the parts most people never see — the
+            <em>milliseconds</em>, the <em>semantics</em>, the details that make a
+            site feel inevitable rather than assembled.
+          </p>
+
+          <div class="about__copy reveal">
+            <p>
+              I'm Arnique, a web developer focused on the front of the stack and
+              everything that makes it fast. I've built marketing sites, web apps,
+              and tooling for startups and established products — work that has to
+              look good and hold up under real traffic.
+            </p>
+            <p>
+              My default is simplicity: fewer moving parts, clearer structure, and
+              code that the next person can actually read. When something can be
+              removed without losing meaning, I remove it.
+            </p>
+          </div>
+
+          <div class="about__stack reveal">
+            <p class="about__stack-label mono">Currently working with</p>
+            <ul class="about__stack-list">
+              <li>HTML / CSS</li>
+              <li>JavaScript / TypeScript</li>
+              <li>React / Next.js</li>
+              <li>Node.js</li>
+              <li>SQL / Postgres</li>
+              <li>Git / CI/CD</li>
+              <li>Figma</li>
+              <li>Performance budgets</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────  CAPABILITIES  ─────────────────────── -->
+    <section class="section" id="capabilities">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">03 — Capabilities</p>
+          <h2 class="section__title">What I do</h2>
+        </header>
+
+        <div class="caps">
+          <article class="cap reveal">
+            <p class="cap__index mono">01</p>
+            <h3 class="cap__title">Front-end development</h3>
+            <p class="cap__text">
+              Semantic HTML, modern CSS, and JavaScript that behaves the same on
+              every screen and every connection.
+            </p>
+          </article>
+          <article class="cap reveal">
+            <p class="cap__index mono">02</p>
+            <h3 class="cap__title">Performance</h3>
+            <p class="cap__text">
+              Lean bundles, sensible caching, and Core Web Vitals that stay green
+              when the traffic spikes, not just in the demo.
+            </p>
+          </article>
+          <article class="cap reveal">
+            <p class="cap__index mono">03</p>
+            <h3 class="cap__title">Design systems</h3>
+            <p class="cap__text">
+              Reusable components, tokens, and patterns that keep a product
+              consistent as it scales past the first screen.
+            </p>
+          </article>
+          <article class="cap reveal">
+            <p class="cap__index mono">04</p>
+            <h3 class="cap__title">Backend &amp; APIs</h3>
+            <p class="cap__text">
+              Node.js services, integrations, and the plumbing between the browser
+              and the database — documented, tested, dependable.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────  CONTACT  ───────────────────────── -->
+    <section class="section section--contact" id="contact">
+      <div class="container">
+        <div class="contact">
+          <p class="section__eyebrow reveal">04 — Contact</p>
+          <h2 class="contact__title reveal">
+            Have something to build?<br />
+            <em>Let's talk.</em>
+          </h2>
+          <p class="contact__lede reveal">
+            I'm currently open to freelance and contract work. Tell me what you're
+            trying to ship — I'll tell you honestly whether I can help.
+          </p>
+          <div class="contact__actions reveal">
+            <a class="btn btn--primary btn--lg" href="mailto:hello@arnique.com">
+              hello@arnique.com
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn--ghost btn--lg" href="#top">
+              Back to top
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ─────────────────────────  FOOTER  ───────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a class="footer__brand" href="#top" aria-label="Arnique — back to top">
+          <img src="images/logo.png" alt="Arnique" width="132" height="31" />
+        </a>
+        <div class="footer__links">
+          <a href="https://github.com/arnique" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://x.com/arnique" target="_blank" rel="noopener">X / Twitter</a>
+          <a href="https://www.linkedin.com/in/arnique" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:hello@arnique.com">Email</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 Arnique. All rights reserved.</p>
+        <p class="footer__meta mono">
+          <span class="footer__dot" aria-hidden="true"></span>
+          Built with HTML, CSS &amp; care
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
